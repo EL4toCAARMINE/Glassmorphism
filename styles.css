@@ -22,8 +22,9 @@ body{
 .cont{
     height: auto;
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     flex-direction: column;
     padding: 40px;
 }
@@ -47,7 +48,7 @@ body{
 }
 
 .marissa{
-    height: 50%;
+    width: 50%;
     border-radius: 50%;
     border: 4px solid rgb(255, 255, 255);
     box-shadow: 0 0 10px 0 #ffffff;
@@ -129,6 +130,10 @@ span, .heart{
     height: 100%;
     width: 50%;
     padding-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 pre {
@@ -198,7 +203,7 @@ code{
     }
 
     .code{
-        height: auto;
+        height: 250px;
         width: 100%;
         padding: 0;
     }
@@ -214,7 +219,17 @@ code{
 
     .copy{
         font-size: 14px;
+        width: 100%;
         display: flex;
         align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 280px;
+    }
+    .rangeContainer{
+        width: 280px;
     }
 }
