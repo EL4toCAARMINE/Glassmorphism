@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url('assets/Designer.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cont{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.container{
+    width: 350px;
+    height: 270px;
+    /* color del blur */
+    background: rgba(255, 255, 255, 0.3);
+    /* Sombra */
+    box-shadow: 0 8px 32px 0 #0000005e;
+    /* Difuminacion */
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marissa{
+    height: 50%;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0 #ffffff;
+}
+
+p{
+    font-size: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:bold ;
+    color: #ffffff;
+    text-align: justify;
+    display: flex;
+    align-items: center;    
+    filter: drop-shadow( 0 0 5px #00000070);
+}
+
+span, .heart{
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.rangeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin-top: 40px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.302);
+    height: 200px;
+    padding: 20px;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+}
+
+.ranges{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.textI{
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:bold ;
+    color: #ffffff;
+    text-align: justify;
+    display: flex;
+    align-items: center;    
+    filter: drop-shadow( 0 0 5px #ffffff);
+}
+
+.copy{
+    font-size: 15px;
+    box-shadow: 0 0 5px #ffffff5e;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease;
+}
+
+.copy:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.code{
+    height: 100%;
+    width: 50%;
+    padding-left: 10px;
+}
+
+pre {
+    color: #fff;
+    filter: drop-shadow( 0 0 5px #ffffff);
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    height: 120px;
+    white-space: pre-wrap;
+}
+
+code{
+    width: 100%;
+    height: 100%;
+}
+
+.range{
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    -webkit-appearance: none;
+    background-color: #ffffff4d;
+    cursor: pointer;
+}
+
+.colorC{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #fff;
+    border-radius: 50%;
+}
+
+#color{
+    -webkit-appearance: none;
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50% 53% 40% 38% / 63% 63% 36% 37% ;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 800px) {
+    .rangeContainer{
+        width: 350px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ranges{
+        height: 250px;
+        width: 100%;
+    }
+
+    .code{
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .textI{
+        font-size: 15px;
+    }
+
+    .colorC{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .copy{
+        font-size: 14px;
+        display: flex;
+        align-self: center;
+    }
+}

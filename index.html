@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/glass.ico" type="image/x-icon">
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="container" id="container">
+            <img class="marissa" src="assets/Marissa.jpeg" alt="Marissa">
+            <p>Marissa <span><img class="heart" src="assets/heart.png" alt="Heart"></span></p>
+        </div>
+        <div class="rangeContainer">
+            <div class="ranges">
+                <p class="textI">Blur</p>
+                <input type="range" class="range" name="range" id="range" value="5" min="0" max="20">
+                <p class="textI">Transparencia</p>
+                <input type="range" class="range" name="rangeT" id="rangeT" value="0.3" min="0" max="1" step="0.01">
+                <p class="textI">Color</p>
+                <div class="colorC">
+                    <input type="color" id="color" value="#ffffff">
+                </div>
+            </div>
+            <div class="code">
+                <p class="textI">CSS</p>
+                <pre>
+                    <code>
+                    </code>
+                  </pre>
+                  <div class="textI copy" id="copy">Copiar</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="config.js"></script>
+</body>
+</html>
