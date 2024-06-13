@@ -29,8 +29,8 @@
         `
 background: rgba(${hexToRgb(colorVal)}, ${transp});
 box-shadow: 0 8px 32px 0 #0000005e;
-backdrop-filter: blur(${valor});
--webkit-backdrop-filter: blur(${valor});
+backdrop-filter: blur(${valor}px);
+-webkit-backdrop-filter: blur(${valor}px);
 border-radius: 20px;`
     }       
 
